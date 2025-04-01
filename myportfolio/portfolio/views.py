@@ -7,3 +7,9 @@ def Home(request):
 
 def About(request):
     return render(request,'portfolio/about.html')
+
+def Projects(request):
+    return render(request,'portfolio/project.html')
+
+def Contact(request):
+    return render(request,'portfolio/contact.html')
