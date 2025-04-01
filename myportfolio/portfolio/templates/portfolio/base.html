@@ -1,82 +1,49 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: "#001F3F" // Custom navy blue
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-rOA1PnstxnOBLzCLhXqsFSPROMKlywJZ/wbA5c0sEbipI1S9ntos+0Ku7bIT6w97" crossorigin="anonymous">
-
-    <style>
-        /* Fade-in Animation */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white font-sans">
-
+<body>
     <!-- Header -->
-    <header class="bg-black py-6 shadow-md">
-        <div class="container mx-auto px-6 max-w-6xl flex justify-between items-center">
-            <a href="{% url 'home' %}"><h1 class="text-3xl font-bold fade-in">Abdullah's Folio</h1></a>
+    <header>
+        <div class="container">
+            <a href="{% url 'home' %}"><h1>Abdullah's Folio</h1></a>
             <nav>
-                <ul class="flex space-x-6 fade-in">
-                    <li><a href="{% url 'about' %}" class="text-white hover:text-blue-400">About</a></li>
-                    <li><a href="{% url 'projects' %}" class="text-white hover:text-blue-400">Projects</a></li>
-                    <li><a href="{% url 'contact' %}" class="text-white hover:text-blue-400">Contact</a></li>
+                <ul>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'projects' %}">Projects</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-6 max-w-6xl">
+    <main class="container">
         {% block content %}
         {% endblock %}
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black text-white text-center py-4 fade-in">
+    <footer>
         <p>&copy; 2025 Abdullah Tahir. All Rights Reserved.</p>
-        <div class="flex justify-center space-x-6 mt-2">
-            <a href="https://github.com/yourusername" class="text-white hover:text-blue-500"><i class="fab fa-github text-xl"></i></a>
-            <a href="https://linkedin.com/in/yourusername" class="text-white hover:text-blue-500"><i class="fab fa-linkedin text-xl"></i></a>
-        </div>
+        <div class="social-links">
+            <a href="https://github.com/AbdullahbinTahir42" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abdullah-tahir-23ntucs1004/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+                </div>
     </footer>
 
-    <!-- JavaScript for Fade-in Effect -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const elements = document.querySelectorAll(".fade-in");
-            elements.forEach(el => el.classList.add("visible"));
-        });
-    </script>
-
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

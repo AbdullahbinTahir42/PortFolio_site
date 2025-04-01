@@ -1,51 +1,70 @@
 {% extends 'portfolio/base.html' %}
+{% load static %}
 
 {% block content %}
-<div>
+<div class="retro-container">
 
     <!-- Hero Section -->
-    <section class="h-screen flex flex-col justify-center items-center text-center px-6">
-        <h2 class="text-5xl font-extrabold fade-in delay-100">Hi, I'm Abdullah Tahir</h2>
-        <p class="text-lg mt-4 fade-in delay-200">A backend developer specialized in Django and AI-driven applications.</p>
-        <a href="#projects" class="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg fade-in delay-300">
+    <section class="hero-section">
+        <div class="typewriter">
+            <h2>Hi, I'm Abdullah Tahir</h2>
+        </div>
+        <p class="hero-subtitle">A backend developer specialized in Django and AI-driven applications.</p>
+        <a href="#projects" class="retro-button">
             View My Work
+            <span class="button-decoration"></span>
         </a>
+        <div class="hero-decoration"></div>
     </section>
     
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800 text-center">
-        <h2 class="text-4xl font-bold fade-in delay-100">About Me</h2>
-        <p class="text-lg max-w-2xl mx-auto mt-4 fade-in delay-200">
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="underline"></div>
+        <p class="about-text">
             I build scalable backend systems and integrate AI into web applications.
         </p>
         <div class="mt-6">
-            <a href="{% url 'about' %}" class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-full text-lg">Learn More</a>
+            <a href="{% url 'about' %}" class="retro-button">
+                Learn More
+                <span class="button-decoration"></span>
+            </a>
         </div>
+        <div class="about-decoration"></div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 text-center bg-gray-900">
-        <h2 class="text-4xl font-bold fade-in delay-100">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 mt-10">
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition fade-in delay-200">
-                <h3 class="text-2xl font-semibold">Resume Analyzer</h3>
-                <p class="mt-2">AI tool that analyzes resumes using NLP and ML.</p>
+    <section id="projects" class="projects-section">
+       <a href="{% url 'projects' %}">  <h2 class="section-title">Projects</h2></a>
+        <div class="underline"></div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="card-decoration"></div>
+                <h3>Resume Analyzer</h3>
+                <p>AI tool that analyzes resumes using NLP and ML.</p>
+                <div class="project-tag">ML</div>
             </div>
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition fade-in delay-300">
-                <h3 class="text-2xl font-semibold">Online Study App</h3>
-                <p class="mt-2">A Django-based platform for discussion and learning.</p>
+            <div class="project-card">
+                <div class="card-decoration"></div>
+                <h3>Online Study App</h3>
+                <p>A Django-based platform for discussion and learning.</p>
+                <div class="project-tag">Django</div>
             </div>
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition fade-in delay-400">
-                <h3 class="text-2xl font-semibold">Football Game Analyzer</h3>
-                <p class="mt-2">YOLO-powered AI system analyzing football games.</p>
+            <div class="project-card">
+                <div class="card-decoration"></div>
+                <h3>Football Game Analyzer</h3>
+                <p>YOLO-powered AI system analyzing football games.</p>
+                <div class="project-tag">AI</div>
             </div>
         </div>
     </section>
     
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-800 text-center">
-        <h2 class="text-4xl font-bold fade-in delay-100">Contact</h2>
-        <p class="text-lg mt-4 fade-in delay-200">Let's connect and work together.</p>
+    <section id="contact" class="contact-section">
+        <a href="{% url 'contact' %}"><h2 class="section-title">Contact</h2></a>
+        <div class="underline"></div>
+        <p class="contact-text">Let's connect and work together.</p>
+        <div class="contact-decoration"></div>
     </section>
 
 </div>

@@ -1,20 +1,47 @@
 {% extends 'portfolio/base.html' %}
+{% load static %}
+
 {% block content %}
-<div><section id="about" class="py-20 bg-gray-200 text-center">
-    <h2 class="text-4xl font-bold text-gray-800">About Me</h2>
-    <p class="text-lg max-w-2xl mx-auto mt-4 text-gray-600">
-        I am a passionate backend developer with experience in Django, Python, and building scalable web applications. I enjoy solving real-world problems with clean, efficient code, and I have a deep interest in leveraging AI to build intelligent systems.
-    </p>
-    <div class="mt-8">
-        <h3 class="text-2xl font-semibold text-gray-800">Skills</h3>
-        <ul class="list-disc mt-4 text-left max-w-xl mx-auto text-gray-600">
-            <li>Backend Development: Django, Python</li>
-            <li>Databases: PostgreSQL, MySQL</li>
-            <li>Machine Learning: Scikit-learn, TensorFlow</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>AI & NLP</li>
-        </ul>
-    </div>
-</section>
+<div class="retro-about">
+    <section id="about" class="about-section">
+        <div class="typewriter-container">
+            <h2 class="section-title vintage-heading">About Me</h2>
+        </div>
+        <div class="underline"></div>
+        
+        <div class="vintage-card">
+            <p class="about-text">
+                I am a passionate backend developer with experience in Django, Python, and building scalable web applications. I enjoy solving real-world problems with clean, efficient code, and I have a deep interest in leveraging AI to build intelligent systems.
+            </p>
+        </div>
+
+        <div class="vintage-card mt-8">
+            <h3 class="subsection-title">Technical Skills</h3>
+            <div class="vintage-list">
+                <div class="list-item">
+                    <span class="bullet">›</span>
+                    <span class="skill-category">Backend:</span> Django, Python, Flask
+                </div>
+                <div class="list-item">
+                    <span class="bullet">›</span>
+                    <span class="skill-category">Databases:</span> PostgreSQL, MySQL, Redis
+                </div>
+                <div class="list-item">
+                    <span class="bullet">›</span>
+                    <span class="skill-category">AI/ML:</span> TensorFlow, Scikit-learn, NLP
+                </div>
+                <div class="list-item">
+                    <span class="bullet">›</span>
+                    <span class="skill-category">DevOps:</span> Docker, AWS, CI/CD
+                </div>
+                <div class="list-item">
+                    <span class="bullet">›</span>
+                    <span class="skill-category">Tools:</span> Git, GitHub, Linux
+                </div>
+            </div>
+        </div>
+
+        <div class="vintage-decoration about-dots"></div>
+    </section>
 </div>
-{% endblock content %}
+{% endblock %}

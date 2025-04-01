@@ -1,17 +1,39 @@
 {% extends 'portfolio/base.html' %}
+{% load static %}
 
 {% block content %}
-<section id="contact" class="py-20 bg-gray-200 text-center">
-    <h2 class="text-4xl font-bold text-gray-800">Contact</h2>
-    <p class="text-lg mt-4 text-gray-600">Feel free to reach out for collaborations or inquiries. You can contact me via the form below or through social media.</p>
+<section id="contact" class="vintage-contact">
+    <div class="typewriter-container">
+        <h2 class="vintage-heading">Contact Me</h2>
+    </div>
+    <div class="underline"></div>
+    
+    <p class="vintage-subtitle">Feel free to reach out for collaborations or inquiries. You can contact me via the form below or through social media.</p>
 
-    <div class="mt-8">
-        <form action="#" method="POST" class="max-w-xl mx-auto">
-            <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 border border-gray-300 rounded-lg" required>
-            <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 border border-gray-300 rounded-lg" required>
-            <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 border border-gray-300 rounded-lg" required></textarea>
-            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white py-3 px-8 rounded-full">Send Message</button>
+    <div class="vintage-form-container">
+        <form action="#" method="POST" class="vintage-form">
+            <div class="form-field">
+                <input type="text" name="name" placeholder="Your Name" class="vintage-input" required>
+                <div class="input-decoration"></div>
+            </div>
+            
+            <div class="form-field">
+                <input type="email" name="email" placeholder="Your Email" class="vintage-input" required>
+                <div class="input-decoration"></div>
+            </div>
+            
+            <div class="form-field">
+                <textarea name="message" placeholder="Your Message" class="vintage-textarea" required></textarea>
+                <div class="textarea-decoration"></div>
+            </div>
+            
+            <button type="submit" class="vintage-button">
+                Send Message
+                <span class="button-stamp"></span>
+            </button>
         </form>
     </div>
+    
+    <div class="vintage-mailbox-decoration"></div>
 </section>
 {% endblock content %}
