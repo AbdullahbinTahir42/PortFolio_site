@@ -44,10 +44,10 @@
     <!-- Header -->
     <header class="bg-black py-6 shadow-md">
         <div class="container mx-auto px-6 max-w-6xl flex justify-between items-center">
-            <h1 class="text-3xl font-bold fade-in">Abdullah's Folio</h1>
+            <a href="{% url 'home' %}"><h1 class="text-3xl font-bold fade-in">Abdullah's Folio</h1></a>
             <nav>
                 <ul class="flex space-x-6 fade-in">
-                    <li><a href="#about" class="text-white hover:text-blue-400">About</a></li>
+                    <li><a href="{% url 'about' %}" class="text-white hover:text-blue-400">About</a></li>
                     <li><a href="#projects" class="text-white hover:text-blue-400">Projects</a></li>
                     <li><a href="#contact" class="text-white hover:text-blue-400">Contact</a></li>
                 </ul>
