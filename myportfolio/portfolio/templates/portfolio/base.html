@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/style3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'style/main.css' %}">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'style/main.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <a href="{% url 'home' %}"><h1>Abdullah's Folio</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'projects' %}">Projects</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="{% url 'home' %}"><h1>Abdullah's Folio</h1></a>
+        <nav>
+          <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container">
-        {% block content %}
-        {% endblock %}
-    </main>
+    <main class="container">{% block content %} {% endblock %}</main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Abdullah Tahir. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="https://github.com/AbdullahbinTahir42" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/abdullah-tahir-23ntucs1004/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
-            </a>
-                </div>
+      <p>&copy; 2025 Abdullah Tahir. All Rights Reserved.</p>
+      <div class="social-links">
+        <a
+          href="https://github.com/AbdullahbinTahir42"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abdullah-tahir-23ntucs1004/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </footer>
 
     <script src="{% static 'js/main.js' %}"></script>
-</body>
+  </body>
 </html>
