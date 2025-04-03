@@ -1,0 +1,76 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="r-resume" class="r-resume-section">
+    <div class="r-header-container">
+        <h2 class="r-section-heading">My Resume</h2>
+    </div>
+    <div class="r-underline"></div>
+    
+    <p class="r-section-subtitle">Here is a summary of my professional experience, skills, and education. Feel free to get in touch for more details!</p>
+
+    <div class="r-resume-container">
+        <div class="r-experience">
+            <h3 class="r-section-subheading">Experience</h3>
+            <div class="r-experience-item">
+                <h4>Backend Developer</h4>
+                <p class="r-company-name">Tech Solutions Ltd.</p>
+                <p class="r-date-range">Jan 2023 - Present</p>
+                <p class="r-description">Working on building scalable and efficient backend services using Django and Python. Leading a team of junior developers and collaborating with other teams to ensure system stability.</p>
+            </div>
+            <div class="r-experience-item">
+                <h4>Junior Backend Developer</h4>
+                <p class="r-company-name">Innovative Web Dev</p>
+                <p class="r-date-range">Jun 2021 - Dec 2022</p>
+                <p class="r-description">Assisted in the development of backend systems for multiple projects using Python and Django. Focused on optimizing code performance and ensuring database integrity.</p>
+            </div>
+        </div>
+
+        <div class="r-skills">
+            <h3 class="r-section-subheading">Skills</h3>
+            <div class="r-skills-list">
+                <div class="r-skill-item">
+                    <i class="fas fa-code"></i>
+                    <span>Python</span>
+                </div>
+                <div class="r-skill-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Django</span>
+                </div>
+                <div class="r-skill-item">
+                    <i class="fas fa-database"></i>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="r-skill-item">
+                    <i class="fas fa-cloud"></i>
+                    <span>RESTful APIs</span>
+                </div>
+                <div class="r-skill-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Git & GitHub</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="r-education">
+            <h3 class="r-section-subheading">Education</h3>
+            <div class="r-education-item">
+                <h4>Bachelor of Science in Artificial Intelligence</h4>
+                <p class="r-institution-name">National Textile University</p>
+                <p class="r-graduation-year">Expected Graduation: 2027</p>
+            </div>
+        </div>
+
+        <div class="r-certifications">
+            <h3 class="r-section-subheading">Certifications</h3>
+            <ul>
+                <li>Certified Python Developer – XYZ Academy</li>
+                <li>Django Framework Certification – ABC Institute</li>
+                <li>Machine Learning Basics – Coursera</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

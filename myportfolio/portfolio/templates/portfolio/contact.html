@@ -2,38 +2,42 @@
 {% load static %}
 
 {% block content %}
-<section id="contact" class="vintage-contact">
-    <div class="typewriter-container">
-        <h2 class="vintage-heading">Contact Me</h2>
+<section id="contact" class="contact-section">
+    <div class="header-container">
+        <h2 class="section-heading">Contact Me</h2>
     </div>
     <div class="underline"></div>
     
-    <p class="vintage-subtitle">Feel free to reach out for collaborations or inquiries. You can contact me via the form below or through social media.</p>
+    <pre class="section-subtitle">
+        Feel free to reach out for collaborations or inquiries.
+    You can contact me via the form below or through social media.</pre>
 
-    <div class="vintage-form-container">
-        <form action="#" method="POST" class="vintage-form">
+    <div class="form-container">
+        <form action="{% url 'contact' %}" method="POST" class="contact-form">
+            {% csrf_token %}
+            
             <div class="form-field">
-                <input type="text" name="name" placeholder="Your Name" class="vintage-input" required>
+                <input type="text" name="name" placeholder="Your Name" class="input-field" required>
                 <div class="input-decoration"></div>
             </div>
             
             <div class="form-field">
-                <input type="email" name="email" placeholder="Your Email" class="vintage-input" required>
+                <input type="email" name="email" placeholder="Your Email" class="input-field" required>
                 <div class="input-decoration"></div>
             </div>
             
             <div class="form-field">
-                <textarea name="message" placeholder="Your Message" class="vintage-textarea" required></textarea>
+                <textarea name="message" placeholder="Your Message" class="textarea-field" required></textarea>
                 <div class="textarea-decoration"></div>
             </div>
             
-            <button type="submit" class="vintage-button">
-                Send Message
-                <span class="button-stamp"></span>
+            <button type="submit" class="submit-button">
+                <i class="fas fa-paper-plane"></i> Send Message
             </button>
         </form>
     </div>
     
-    <div class="vintage-mailbox-decoration"></div>
+    
+
 </section>
 {% endblock content %}

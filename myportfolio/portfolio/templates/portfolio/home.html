@@ -1,68 +1,22 @@
 {% extends 'portfolio/base.html' %} {% load static %} {% block content %}
-<div class="retro-container">
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="typewriter">
-      <h2>Hi, I'm Abdullah Tahir</h2>
-    </div>
-    <p class="hero-subtitle">
-      A backend developer specialized in Django and AI-driven applications.
-    </p>
-    <a href="#projects" class="retro-button">
-      View My Work
-      <span class="button-decoration"></span>
-    </a>
-    <div class="hero-decoration"></div>
-  </section>
+<div class="container">
+  <div class="hero-pic">
+     <img src="{% static 'images/my.jpg' %}" alt="profile pic">
+  </div>
+  <div class="hero-text">
+     <h5>Hi I'm <span class="input">Backend Developer</span></h5>
+     <h1>Abdullah Tahir</h1>
+     <p>I'm a Backend Developer, build scalable and efficient backend systems,
+          where data flows smoothly and users interact seamlessly.
+     </p>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <h2 class="section-title">About Me</h2>
-    <div class="underline"></div>
-    <p class="about-text">
-      I build scalable backend systems and integrate AI into web applications.
-    </p>
-    <div class="mt-6">
-      <a href="{% url 'about' %}" class="retro-button">
-        Learn More
-        <span class="button-decoration"></span>
-      </a>
-    </div>
-    <div class="about-decoration"></div>
-  </section>
+     <div class="btn-group">
+        <a href="{% url 'download_cv' %}" class="btn active">Download CV</a>
+     </div>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section">
-    <a href="{% url 'projects' %}"> <h2 class="section-title">Projects</h2></a>
-    <div class="underline"></div>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="card-decoration"></div>
-        <h3>Resume Analyzer</h3>
-        <p>AI tool that analyzes resumes using NLP and ML.</p>
-        <div class="project-tag">ML</div>
-      </div>
-      <div class="project-card">
-        <div class="card-decoration"></div>
-        <h3>Online Study App</h3>
-        <p>A Django-based platform for discussion and learning.</p>
-        <div class="project-tag">Django</div>
-      </div>
-      <div class="project-card">
-        <div class="card-decoration"></div>
-        <h3>Football Game Analyzer</h3>
-        <p>YOLO-powered AI system analyzing football games.</p>
-        <div class="project-tag">AI</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <a href="{% url 'contact' %}"><h2 class="section-title">Contact</h2></a>
-    <div class="underline"></div>
-    <p class="contact-text">Let's connect and work together.</p>
-    <div class="contact-decoration"></div>
-  </section>
+  
+  </div>
+</div>
+</div>
 </div>
 {% endblock content %}
