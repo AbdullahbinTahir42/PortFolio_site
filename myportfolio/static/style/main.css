@@ -47,7 +47,7 @@ header {
 .logo i {
   height: 45px;
   width: 45px;
-  background-color: #40826D;
+  background-color: #40826d;
   border-radius: 50%;
   color: #fff;
   font-weight: 700;
@@ -77,7 +77,7 @@ nav .togglebtn {
 
 nav .togglebtn span {
   display: block;
-  background-color: #40826D;
+  background-color: #40826d;
   margin: 5px 0;
   width: 100%;
   height: 3px;
@@ -105,7 +105,7 @@ nav .navlinks li a {
 }
 
 nav .navlinks li a:hover {
-  background-color: #40826D; /* Blue background on hover */
+  background-color: #40826d; /* Blue background on hover */
   color: #fff; /* Change text color to white when hovered */
   transform: scale(1.1); /* Slightly enlarge the link on hover */
 }
@@ -136,14 +136,13 @@ nav .navlinks li a:hover {
 }
 
 .hero-pic:hover {
-  box-shadow: 8px 8px 25px #40826D;
+  box-shadow: 8px 8px 25px #40826d;
   border: 15px solid #303031; /* Add blue border on container hover */
 }
 
 .hero-pic img:hover {
   transform: scale(1.1); /* Scale the image on hover */
 }
-
 
 .hero-text {
   max-width: 500px;
@@ -157,12 +156,12 @@ nav .navlinks li a:hover {
 }
 
 .hero-text h5 span {
-  color: #40826D;
+  color: #40826d;
   font-size: 16px;
 }
 
 .hero-text h1 {
-  color: #40826D;
+  color: #40826d;
   font-size: 3rem;
   margin-bottom: 15px; /* Space below the title */
 }
@@ -177,14 +176,14 @@ nav .navlinks li a:hover {
 }
 
 .btn-group .btn {
-  border-color: #40826D;
+  border-color: #40826d;
   color: #fff;
   background-color: #333;
   padding: 12px 25px;
   margin: 5px 0;
   margin-right: 7px;
   border-radius: 30px;
-  border: 2px solid #40826D;
+  border: 2px solid #40826d;
   box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 
@@ -208,7 +207,7 @@ nav .navlinks li a:hover {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #40826D;
+  background: #40826d;
   transition: all 0.4s ease-in-out;
   z-index: -1;
 }
@@ -218,10 +217,9 @@ nav .navlinks li a:hover {
 }
 
 .btn.active:hover {
-  color: #40826D;
-  border-color: #40826D;
+  color: #40826d;
+  border-color: #40826d;
 }
-
 
 .hero-text .social i {
   color: #e5e5e5;
@@ -231,7 +229,7 @@ nav .navlinks li a:hover {
 }
 
 .hero-text .social i:hover {
-  color: #40826D;
+  color: #40826d;
   transform: rotate(360deg);
 }
 
@@ -240,7 +238,6 @@ footer {
   padding: 10px;
   background-color: #222;
   color: #e5e5e5;
-  
 }
 
 .hero-text {
@@ -330,7 +327,6 @@ footer {
   }
 }
 
-
 /* projects */
 
 /* General Styles */
@@ -357,7 +353,7 @@ body {
 .projects-heading {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #2F6D5D; /* Deep green for a modern look */
+  color: #2f6d5d; /* Deep green for a modern look */
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
@@ -372,7 +368,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(to right, #2F6D5D, #b9d4ec);
+  background: linear-gradient(to right, #2f6d5d, #b9d4ec);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s ease-in-out;
@@ -383,21 +379,20 @@ body {
   transform-origin: left;
 }
 
-
 .underline {
   width: 80px;
   height: 3px;
-  background-color: #40826D;
+  background-color: #40826d;
   margin: 15px auto;
 }
 
 /* Grid Layout - Responsive */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2.5rem 1rem;
-  justify-items: center; 
+  justify-items: center;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -417,13 +412,13 @@ body {
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-  border-color: #40826D;
+  border-color: #40826d;
 }
 
 /* Card Tag */
 .card-tag {
   text-align-last: center;
-  background-color: #40826D;
+  background-color: #40826d;
   color: #fff;
   padding: 6px 12px;
   border-radius: 6px;
@@ -452,7 +447,7 @@ body {
 .project-link {
   display: inline-flex;
   align-items: center;
-  color: #40826D;
+  color: #40826d;
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
@@ -472,7 +467,7 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #40826D;
+  background-color: #40826d;
   bottom: 0;
   left: 0;
   transform: scaleX(0);
@@ -489,13 +484,13 @@ body {
   margin-top: 18px;
   width: 100%;
   height: 2px;
-  background-color: #40826D;
+  background-color: #40826d;
   opacity: 0.25;
 }
 
 /* Section Decoration */
 .projects-decoration {
-  background-color: #40826D;
+  background-color: #40826d;
   height: 2px;
 }
 
@@ -517,7 +512,7 @@ body {
 
 .section-heading {
   font-size: 2.5rem;
-  color: #40826D;
+  color: #40826d;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -526,7 +521,7 @@ body {
 .underline {
   width: 80px;
   height: 4px;
-  background-color: #40826D;
+  background-color: #40826d;
   margin: 0 auto 20px;
 }
 
@@ -561,7 +556,8 @@ body {
   position: relative;
 }
 
-.input-field, .textarea-field {
+.input-field,
+.textarea-field {
   width: 100%;
   padding: 12px 15px;
   border-radius: 8px;
@@ -571,8 +567,9 @@ body {
   transition: border-color 0.3s ease;
 }
 
-.input-field:focus, .textarea-field:focus {
-  border-color: #40826D;
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #40826d;
   outline: none;
 }
 
@@ -581,24 +578,26 @@ body {
   resize: none;
 }
 
-.input-decoration, .textarea-decoration {
+.input-decoration,
+.textarea-decoration {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #40826D;
+  background-color: #40826d;
   top: 100%;
   left: 0;
   transition: width 0.3s ease;
   visibility: hidden;
 }
 
-.input-field:focus ~ .input-decoration, .textarea-field:focus ~ .textarea-decoration {
+.input-field:focus ~ .input-decoration,
+.textarea-field:focus ~ .textarea-decoration {
   visibility: visible;
   width: 100%;
 }
 
 .submit-button {
-  background-color: #40826D;
+  background-color: #40826d;
   color: #fff;
   padding: 12px 25px;
   border-radius: 30px;
@@ -611,7 +610,7 @@ body {
 }
 
 .submit-button:hover {
-  background-color: #005bb5;
+  background-color: #40826d;
   transform: scale(1.05);
 }
 
@@ -639,7 +638,7 @@ body {
 .mailbox-decoration {
   width: 50px;
   height: 50px;
-  background-color: #40826D;
+  background-color: #40826d;
   border-radius: 50%;
   margin: 50px auto 0;
 }
@@ -666,13 +665,12 @@ body {
   }
 }
 
-
 /* Resume */
 
 /* Resume Section Styles */
 .r-resume-section {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #40826D, #00b3b3);
+  background: linear-gradient(135deg, #40826d, #00b3b3);
   text-align: center;
   margin-top: 50px;
   border-radius: 8px;
@@ -717,30 +715,34 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-.r-experience, .r-skills, .r-education, .r-certifications {
+.r-experience,
+.r-skills,
+.r-education,
+.r-certifications {
   margin-bottom: 30px;
 }
 
 .r-section-subheading {
   font-size: 1.8rem;
-  color: #40826D;
+  color: #40826d;
   font-weight: 600;
   margin-bottom: 15px;
-  text-align: left;
   position: relative;
+  text-align: justify;
 }
 
 .r-section-subheading::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
   width: 50px;
   height: 3px;
-  background-color: #40826D;
+  background-color: #40826d;
 }
 
-.r-experience-item, .r-education-item {
+.r-experience-item,
+.r-education-item {
   margin-bottom: 20px;
   text-align: left;
   position: relative;
@@ -748,7 +750,8 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.r-experience-item:hover, .r-education-item:hover {
+.r-experience-item:hover,
+.r-education-item:hover {
   transform: translateX(10px);
   background-color: #f0f8ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -756,11 +759,12 @@ body {
 
 h4 {
   font-size: 1.3rem;
-  color: #40826D;
+  color: #40826d;
   margin-bottom: 5px;
 }
 
-.r-company-name, .r-institution-name {
+.r-company-name,
+.r-institution-name {
   font-size: 1rem;
   font-weight: 500;
   color: #555;
@@ -795,7 +799,7 @@ h4 {
 }
 
 .r-skill-item:hover {
-  background-color: #40826D;
+  background-color: #40826d;
   color: #fff;
   transform: scale(1.1);
 }
@@ -828,7 +832,7 @@ h4 {
   content: "•";
   position: absolute;
   left: 0;
-  color: #40826D;
+  color: #40826d;
   font-size: 1.5rem;
   top: 0;
 }
@@ -874,4 +878,3 @@ h4 {
     transform: translateY(0);
   }
 }
-

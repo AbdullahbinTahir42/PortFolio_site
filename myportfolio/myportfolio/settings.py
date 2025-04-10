@@ -133,3 +133,15 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# The email address where admin notifications will be sent
+ADMIN_EMAIL = 'abdullahbintahir42@gmail.com'  # Change this to your actual email address
+
+EMAIL_HOST_USER = "accounuttest@gmail.com"
+EMAIL_HOST_PASSWORD = "hxlttmmfdqtogtar"  # Use App Password if Gmail
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
