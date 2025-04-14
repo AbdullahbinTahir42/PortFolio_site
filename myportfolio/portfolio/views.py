@@ -1,15 +1,19 @@
 from django.shortcuts import render,redirect
 from .models import Contact
-from django.http import FileResponse
+from django.http import FileResponse,Http404
 import os
 from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
 
 
+
 def download_cv(request):
-    file_path = os.path.join("static/files", "MyCV.pdf")
-    return FileResponse(open(file_path, "rb"), as_attachment=True)
+    file_path = os.path.join(settings.BASE_DIR, "static", "files", "MyCV.pdf")
+    try:
+        return FileResponse(open(file_path, "rb"), as_attachment=True)
+    except FileNotFoundError:
+        raise Http404("CV file not found.")
 
 def Home(request):
     return render(request,'portfolio/home.html')
@@ -31,20 +35,11 @@ def contact(request):
 
         Contact.objects.create(name=name, email=email, message=message)
 
-        # Email to admin
-        send_mail(
-            f"New message from {name}",
-            message,
-            email,  # from_email (visitor's email)
-            [settings.ADMIN_EMAIL],
-            fail_silently=False,
-        )
-
         # Confirmation email to user
         send_mail(
             f"Thank you {name}, for contacting me!",
             "I've received your message and will get back to you soon.",
-            settings.EMAIL_HOST_USER,  # from_email (your admin email)
+            settings.ADMIN_EMAIL,  # from_email (your admin email)
             [email],               # recipient_list (visitor's email)
             fail_silently=False,
         )
