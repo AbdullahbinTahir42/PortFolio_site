@@ -1,0 +1,25 @@
+# Ignore Django settings that might have sensitive info
+myportfolio/myportfolio/settings.py
+
+# Ignore environment variable files
+.env
+secrets.json
+
+# Ignore Python bytecode and caches
+*.pyc
+__pycache__/
+
+# Ignore Django migration caches (optional but clean)
+*/migrations/*.pyc
+*/migrations/__pycache__/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore logs
+*.log
+
+# Ignore compiled translation files
+*.mo
+*.pot

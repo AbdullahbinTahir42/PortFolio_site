@@ -31,7 +31,6 @@ def contact(request):
         name = request.POST.get("name")
         email = request.POST.get("email")
         message = request.POST.get("message")
-        print(email)
 
         Contact.objects.create(name=name, email=email, message=message)
 
