@@ -1,25 +1,67 @@
-{% extends 'portfolio/base.html' %} {% load static %} {% block content %}
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
 
 <div class="container">
-<div class="hero-pic">
-   <img src="{% static 'images/my.JPG' %}" alt="profile pic">
+    <div class="hero-pic">
+        <img src="{% static 'images/my.JPG' %}" alt="profile pic">
+    </div>
+
+    <div class="hero-text">
+        <h5>Hi I'm <span class="input">Backend Developer</span></h5>
+        <h1>Abdullah Tahir</h1>
+        <p>I'm a Backend Developer, building scalable and efficient backend systems,
+            where data flows smoothly and users interact seamlessly.
+        </p>
+
+        <div class="btn-group">
+            <a href="{% url 'download_cv' %}" class="btn active">Download CV</a>
+            <a href="{% url 'projects' %}" class="btn">Learn More</a>  <!-- Learn More button -->
+        </div>
+    </div>
 </div>
 
- 
-  <div class="hero-text">
-     <h5>Hi I'm <span class="input">Backend Developer</span></h5>
-     <h1>Abdullah Tahir</h1>
-     <p>I'm a Backend Developer, build scalable and efficient backend systems,
-          where data flows smoothly and users interact seamlessly.
-     </p>
+<!-- Display a few projects on the homepage -->
+<div class="projects-preview">
+    <h2>My Recent Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Short description of the project goes here.</p>
+            <a href="{% url 'projects' %}" class="btn">Learn More</a> <!-- Link to projects page -->
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Short description of the project goes here.</p>
+            <a href="{% url 'projects' %}" class="btn">Learn More</a> <!-- Link to projects page -->
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Short description of the project goes here.</p>
+            <a href="{% url 'projects' %}" class="btn">Learn More</a> <!-- Link to projects page -->
+        </div>
+    </div>
+    <a href="{% url 'projects' %}" class="btn-about">View All>></a>    
+</div>
 
-     <div class="btn-group">
-        <a href="{% url 'download_cv' %}" class="btn active">Download CV</a>
-     </div>
+<!-- Resume Section -->
+<div class="resume-section">
+    <h2>Resume</h2>
+    <p>Check out my detailed resume for more information on my skills, experience, and education.</p>
+    <div class="btn-group">
+        <a href="{% url 'download_cv' %}" class="btn">Download My Resume</a>  <!-- Resume Download button -->
+        <a href="{% url 'resume' %}" class="btn-about">About Me</a>  <!-- Resume Download button -->
+    </div>
+</div>
 
-  
-  </div>
+<!-- Contact Section (Simplified) -->
+<div class="contact-section">
+    <h2>Contact Me</h2>
+    <p>If you would like to get in touch, feel free to reach out to me through the following:</p>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:abdullahtahir4200@gmail.com">abdullahtahir4200@gmail.com</a></p>  <!-- Replace with your email -->
+        <p>Phone: +923045972323</p>  <!-- Replace with your phone number -->
+    </div>
 </div>
-</div>
-</div>
+
 {% endblock content %}

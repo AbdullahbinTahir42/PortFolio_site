@@ -16,3 +16,7 @@ var typed=new Typed(".input",{
 })
 
 
+document.querySelector('.togglebtn').addEventListener('click', function () {
+    document.querySelector('.navlinks').classList.toggle('active');
+  });
+  
