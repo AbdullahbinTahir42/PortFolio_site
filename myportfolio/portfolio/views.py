@@ -9,7 +9,7 @@ from django.contrib import messages
 
 
 def download_cv(request):
-    file_path = os.path.join(settings.BASE_DIR, "static", "files", "MyCV.pdf")
+    file_path = os.path.join(settings.BASE_DIR, "static", "files", "CV.pdf")
     try:
         return FileResponse(open(file_path, "rb"), as_attachment=True)
     except FileNotFoundError:
