@@ -1,5 +1,3 @@
-# Ignore Django settings that might have sensitive info
-myportfolio/myportfolio/settings.py
 
 # Ignore environment variable files
 .env
