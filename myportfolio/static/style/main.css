@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+  padding-top: 90px; /* Adjust based on your actual header height */
   width: 80%;
   margin: 0 auto;
 }
@@ -34,20 +35,27 @@ body {
   padding: 30px 0;
   background-color: #333;
   color: #faf9f6;
+  border-radius: 20px;
 }
 
 .hero-text h1 {
   font-size: 3rem;
   margin: 10px 0;
 }
-
 .hero-text h5 {
-  font-size: 1.2rem;
-  color: #e7eaec;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .hero-text .input {
   color: #40826d;
+  font-weight: bold;
+  border-right: 2px solid #40826d;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline; /* ✅ Important to stay inline with "Hi I'm" */
 }
 
 .hero-text p {
@@ -191,18 +199,18 @@ body {
   padding: 50px 0;
   background-color: #faf9f6;
   text-align: center;
-  margin-top: 10px;
 }
 
 .contact-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: #40826d;
 }
 
 .contact-section p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #333;
 }
 
@@ -260,8 +268,17 @@ body {
   background-color: #f5f5f5;
 }
 
+.hero-section,
+.main-content,
+.resume-section {
+  padding-top: 70px; /* Adjust based on your actual header height */
+}
 /* Header Styles */
 .site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #333;
   color: #faf9f6;
   padding: 15px 0;
@@ -271,7 +288,6 @@ body {
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10 10px;
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
@@ -439,7 +455,7 @@ body {
 
 /* Centering the section */
 .projects-header {
-  padding-top: 3rem;
+  padding-top: 90px;
   text-align: center;
 }
 
@@ -591,24 +607,25 @@ body {
 
 /* Contact Section Styles */
 .contact-section {
-  padding: 50px 20px;
+  padding: 50px 10px;
   background-color: #f5f5f5;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.header-container {
-  margin-bottom: 20px;
+.section-heading {
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.section-heading {
-  font-size: 2.5rem;
-  color: #40826d;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+.contact-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
 }
 
 .underline {

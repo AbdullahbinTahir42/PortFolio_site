@@ -1,43 +1,55 @@
-{% extends 'portfolio/base.html' %}
-{% load static %}
-
-{% block content %}
+{% extends 'portfolio/base.html' %} {% load static %} {% block content %}
 <section id="contact" class="contact-section">
-    <div class="header-container">
-        <h2 class="section-heading">Contact Me</h2>
-    </div>
-    <div class="underline"></div>
-    
-    <pre class="section-subtitle">
+  <div class="contact-header-container">
+    <h2 class="section-heading">Contact Me</h2>
+  </div>
+  <div class="underline"></div>
+
+  <pre class="section-subtitle">
         Feel free to reach out for collaborations or inquiries.
-    You can contact me via the form below or through social media.</pre>
+    You can contact me via the form below or through social media.</pre
+  >
 
-    <div class="form-container">
-        <form action="{% url 'contact' %}" method="POST" class="contact-form">
-            {% csrf_token %}
-            
-            <div class="form-field">
-                <input type="text" name="name" placeholder="Your Name" class="input-field" required>
-                <div class="input-decoration"></div>
-            </div>
-            
-            <div class="form-field">
-                <input type="email" name="email" placeholder="Your Email" class="input-field" required>
-                <div class="input-decoration"></div>
-            </div>
-            
-            <div class="form-field">
-                <textarea name="message" placeholder="Your Message" class="textarea-field" required></textarea>
-                <div class="textarea-decoration"></div>
-            </div>
-            
-            <button type="submit" class="submit-button">
-                <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-        </form>
-    </div>
-    
-    
+  <div class="form-container">
+    <form action="{% url 'contact' %}" method="POST" class="contact-form">
+      {% csrf_token %}
 
+      <div class="form-field">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="input-field"
+          required
+        />
+        <div class="input-decoration"></div>
+      </div>
+
+      <div class="form-field">
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="input-field"
+          required
+        />
+        <div class="input-decoration"></div>
+      </div>
+
+      <div class="form-field">
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="textarea-field"
+          required
+        ></textarea>
+        <div class="textarea-decoration"></div>
+      </div>
+
+      <button type="submit" class="submit-button">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </div>
 </section>
 {% endblock content %}
